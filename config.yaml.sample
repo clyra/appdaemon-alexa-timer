@@ -1,0 +1,11 @@
+EchoTest:
+  module: alexatimer
+  class: AlexaTimer
+  sensor: 
+    - sensor.echo_dot_bancada_next_timer
+    - sensor.echo_dot_sala_next_timer
+    - sensor.echo_dot_cozinha_next_timer
+  timer_name:
+    - "fritadeira"
+  service: light/toggle
+  entity_id: light.c3
