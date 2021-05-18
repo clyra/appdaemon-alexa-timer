@@ -6,10 +6,10 @@ EchoTest:
     - echo_dot_bancada
     - echo_dot_sala
     - echo_dot_cozinha
-  timer_name:
+  timer_name:     # optional
     - "something"
-  silence_alexa_delay: 5
-  alexa_stop_word: 'stop'
+  silence_alexa_delay: 5   # optional
+  alexa_stop_word: 'stop'  # optional
   service: light/toggle
   entity_id: light.c3
   
